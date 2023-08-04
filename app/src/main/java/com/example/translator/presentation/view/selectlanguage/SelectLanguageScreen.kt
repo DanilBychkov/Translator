@@ -35,5 +35,5 @@ fun SelectLanguageScreen() {
 @Preview
 @Composable
 private fun SelectLanguageScreenPreview() {
-    SelectLanguageScreen()
+    //SelectLanguageScreen()
 }

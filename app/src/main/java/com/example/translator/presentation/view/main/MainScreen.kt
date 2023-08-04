@@ -13,7 +13,7 @@ import com.example.translator.presentation.view.main.cell.SelectLanguageCell
  */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-internal fun MainScreen() {
+internal fun MainScreen(onItemClick: () -> Unit) {
     Scaffold(
         topBar = {
             TopAppBar(
@@ -27,8 +27,8 @@ internal fun MainScreen() {
             SelectLanguageCell(
                 originalLanguage = "Русский",
                 translationLanguage = "Английский",
-                onOriginalLanguageClick = {},
-                onTranslationLanguageClick = {}
+                onOriginalLanguageClick = onItemClick,
+                onTranslationLanguageClick = onItemClick
             )
         }
     }
@@ -38,5 +38,5 @@ internal fun MainScreen() {
 @Preview(showBackground = true)
 @Composable
 private fun MainScreenPreview() {
-    MainScreen()
+    MainScreen(onItemClick = {})
 }
