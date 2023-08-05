@@ -12,6 +12,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/featureApi" />
+            <option value="$PROJECT_DIR$/translatorApi" />
+            <option value="$PROJECT_DIR$/translatorImpl" />
           </set>
         </option>
       </GradleProjectSettings>
